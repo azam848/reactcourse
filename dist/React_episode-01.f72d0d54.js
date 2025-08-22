@@ -765,55 +765,539 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
     }, undefined);
 };
 _c = Header;
-const RestaurantCard = ()=>{
+const RestaurantCard = ({ resData })=>{
+    const { name, cuisine, avgRating, deliveryTime, costForTwo, cloudinaryImageId } = resData?.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "res-logo",
                 alt: "res-logo",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/08bed38c-b2df-4778-bb45-431ea2198d75_485420.JPG"
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/" + cloudinaryImageId
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 45,
+                lineNumber: 54,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: " zayka "
+                children: name
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 50,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "biryani,north indian,asian"
+                children: cuisine
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 51,
+                lineNumber: 63,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "4.4 star"
+                children: avgRating
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 52,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "38 min"
+                children: deliveryTime
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 53,
+                lineNumber: 65,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: costForTwo
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 66,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 44,
+        lineNumber: 53,
         columnNumber: 5
     }, undefined);
 };
 _c1 = RestaurantCard;
+const resList = [
+    {
+        info: {
+            id: "76663",
+            name: "Subway",
+            cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/4d2e2d5b-8ae2-434e-a852-409fed329f4c_76663.jpg",
+            locality: "Ach Market",
+            areaName: "Sector 72",
+            costForTwo: "\u20B9350 for two",
+            cuisines: [
+                "sandwich",
+                "Salads",
+                "wrap",
+                "Healthy Food"
+            ],
+            avgRating: 4.1,
+            parentId: "2",
+            avgRatingString: "4.1",
+            totalRatingsString: "17K+",
+            sla: {
+                deliveryTime: 35,
+                lastMileTravel: 6.8,
+                serviceability: "SERVICEABLE",
+                slaString: "35-40 mins",
+                lastMileTravelString: "6.8 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2025-08-22 07:00:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "ABOVE \u20B9700",
+                discountTag: "FLAT DEAL"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: "--"
+                }
+            },
+            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        analytics: {
+            context: "seo-data-0d484a69-e2b0-4c21-83a8-acf3c4d8a517"
+        },
+        cta: {
+            link: "https://www.swiggy.com/city/noida-1/subway-ach-market-sector-72-rest76663",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "177495",
+            name: "La Pino'z Pizza",
+            cloudinaryImageId: "ugemttaiukyqfhxkfs9i",
+            locality: "Sector 104",
+            areaName: "Hajipur",
+            costForTwo: "\u20B9300 for two",
+            cuisines: [
+                "Pizzas",
+                "Pastas",
+                "Italian",
+                "Desserts",
+                "Beverages"
+            ],
+            avgRating: 4,
+            parentId: "4961",
+            avgRatingString: "4.0",
+            totalRatingsString: "15K+",
+            sla: {
+                deliveryTime: 43,
+                lastMileTravel: 9.3,
+                serviceability: "SERVICEABLE",
+                slaString: "40-45 mins",
+                lastMileTravelString: "9.3 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2025-08-23 05:29:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "\u20B9150 OFF",
+                subHeader: "ABOVE \u20B9299",
+                discountTag: "FLAT DEAL"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: "3.5",
+                    ratingCount: "15"
+                },
+                source: "GOOGLE",
+                sourceIconImageId: "v1704440323/google_ratings/rating_google_tag"
+            },
+            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        analytics: {
+            context: "seo-data-0d484a69-e2b0-4c21-83a8-acf3c4d8a517"
+        },
+        cta: {
+            link: "https://www.swiggy.com/city/noida-1/la-pinoz-pizza-sector-104-hajipur-rest177495",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "42808",
+            name: "Rollsking",
+            cloudinaryImageId: "rpoiziw5dhc1h59y5tje",
+            locality: "Sector 62",
+            areaName: "Sector 62",
+            costForTwo: "\u20B9250 for two",
+            cuisines: [
+                "Fast Food",
+                "Rolls & Wraps",
+                "North Indian",
+                "Snacks"
+            ],
+            avgRating: 4.3,
+            parentId: "4697",
+            avgRatingString: "4.3",
+            totalRatingsString: "45K+",
+            sla: {
+                deliveryTime: 40,
+                lastMileTravel: 7.4,
+                serviceability: "SERVICEABLE",
+                slaString: "35-40 mins",
+                lastMileTravelString: "7.4 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2025-08-22 07:30:00",
+                opened: true
+            },
+            badges: {
+                imageBadges: [
+                    {
+                        imageId: "Rxawards/_CATEGORY-Rolls.png",
+                        description: "Delivery!"
+                    }
+                ]
+            },
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
+                            {
+                                attributes: {
+                                    description: "Delivery!",
+                                    imageId: "Rxawards/_CATEGORY-Rolls.png"
+                                }
+                            }
+                        ]
+                    },
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "ITEMS",
+                subHeader: "AT \u20B959"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: "4.3",
+                    ratingCount: "999"
+                },
+                source: "GOOGLE",
+                sourceIconImageId: "v1704440323/google_ratings/rating_google_tag"
+            },
+            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        analytics: {
+            context: "seo-data-0d484a69-e2b0-4c21-83a8-acf3c4d8a517"
+        },
+        cta: {
+            link: "https://www.swiggy.com/city/noida-1/rollsking-sector-62-rest42808",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "523321",
+            name: "Boba Chai By Chai Point",
+            cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/16/cbbd74b1-3a88-42ec-a9e5-a799f29be0f5_523321.jpg",
+            locality: "Sector 73",
+            areaName: "Sarfabad",
+            costForTwo: "\u20B9200 for two",
+            cuisines: [
+                "Bakery",
+                "Beverages",
+                "Maharashtrian",
+                "Snacks",
+                "Street Food",
+                "South Indian",
+                "Punjabi",
+                "Chaat",
+                "Indian",
+                "American"
+            ],
+            avgRating: 4.1,
+            parentId: "312141",
+            avgRatingString: "4.1",
+            totalRatingsString: "24",
+            sla: {
+                deliveryTime: 51,
+                lastMileTravel: 5,
+                serviceability: "SERVICEABLE",
+                slaString: "50-55 mins",
+                lastMileTravelString: "5.0 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2025-08-28 00:00:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "40% OFF",
+                subHeader: "UPTO \u20B980"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: "--"
+                }
+            },
+            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        analytics: {
+            context: "seo-data-0d484a69-e2b0-4c21-83a8-acf3c4d8a517"
+        },
+        cta: {
+            link: "https://www.swiggy.com/city/noida-1/boba-chai-by-chai-point-sector-73-sarfabad-rest523321",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "481848",
+            name: "Peppy Parathas & Rolls By Chai Point",
+            cloudinaryImageId: "zzhwpyssitvcpoknzrho",
+            locality: "Sector 75",
+            areaName: "Sector 72",
+            costForTwo: "\u20B9200 for two",
+            cuisines: [
+                "Bakery",
+                "Beverages",
+                "Maharashtrian",
+                "Snacks",
+                "Street Food",
+                "South Indian",
+                "Punjabi",
+                "Chaat",
+                "Indian",
+                "American"
+            ],
+            avgRating: 4.7,
+            parentId: "289265",
+            avgRatingString: "4.7",
+            totalRatingsString: "54",
+            sla: {
+                deliveryTime: 51,
+                lastMileTravel: 5,
+                serviceability: "SERVICEABLE",
+                slaString: "50-55 mins",
+                lastMileTravelString: "5.0 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2025-08-28 00:00:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "40% OFF",
+                subHeader: "UPTO \u20B980"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: "--"
+                }
+            },
+            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        analytics: {
+            context: "seo-data-0d484a69-e2b0-4c21-83a8-acf3c4d8a517"
+        },
+        cta: {
+            link: "https://www.swiggy.com/city/noida-1/peppy-parathas-and-rolls-by-chai-point-sector-75-sector-72-rest481848",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "383492",
+            name: "Cafe Coffee Day",
+            cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/8/21/a2d05bc9-d9d6-4af2-9bb9-c43be4dd9659_383492.JPG",
+            locality: "Sector 73",
+            areaName: "Sector 72",
+            costForTwo: "\u20B9400 for two",
+            cuisines: [
+                "Beverages",
+                "Cafe",
+                "Snacks",
+                "Desserts",
+                "Burgers",
+                "Ice Cream",
+                "Bakery",
+                "Fast Food"
+            ],
+            avgRating: 4.3,
+            parentId: "1",
+            avgRatingString: "4.3",
+            totalRatingsString: "1.0K+",
+            sla: {
+                deliveryTime: 47,
+                lastMileTravel: 5,
+                serviceability: "SERVICEABLE",
+                slaString: "45-50 mins",
+                lastMileTravelString: "5.0 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2025-08-29 00:00:00",
+                opened: true
+            },
+            badges: {
+                textExtendedBadges: [
+                    {
+                        iconId: "guiltfree/GF_Logo_android_3x",
+                        shortDescription: "options available",
+                        fontColor: "#7E808C"
+                    }
+                ]
+            },
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {
+                        badgeObject: [
+                            {
+                                attributes: {
+                                    description: "",
+                                    fontColor: "#7E808C",
+                                    iconId: "guiltfree/GF_Logo_android_3x",
+                                    shortDescription: "options available"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "50% OFF",
+                subHeader: "UPTO \u20B9100"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: "--"
+                }
+            },
+            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        analytics: {
+            context: "seo-data-0d484a69-e2b0-4c21-83a8-acf3c4d8a517"
+        },
+        cta: {
+            link: "https://www.swiggy.com/city/noida-1/cafe-coffee-day-sector-73-sector-72-rest383492",
+            type: "WEBLINK"
+        }
+    }
+];
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -823,72 +1307,27 @@ const Body = ()=>{
                 children: "search"
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 60,
+                lineNumber: 538,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+                children: resList.map((Restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                        resData: Restaurant
+                    }, Restaurant.info.id, false, {
                         fileName: "app.js",
-                        lineNumber: 62,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 63,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 64,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 65,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 66,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 67,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 68,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 69,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 70,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 71,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                        lineNumber: 541,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 61,
+                lineNumber: 539,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 59,
+        lineNumber: 537,
         columnNumber: 5
     }, undefined);
 };
@@ -898,18 +1337,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 80,
+                lineNumber: 551,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 82,
+                lineNumber: 553,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 79,
+        lineNumber: 550,
         columnNumber: 5
     }, undefined);
 };
@@ -917,7 +1356,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 89,
+    lineNumber: 560,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
