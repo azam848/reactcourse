@@ -48,3 +48,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.filter {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.filter-btn {
+  cursor: pointer;
+}

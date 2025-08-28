@@ -1,2 +1,15 @@
+# dependencies
 /node_modules
+
+# build/cache
+dist
 .parcel-cache
+.cache
+
+# system junk
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+
